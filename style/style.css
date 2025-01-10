@@ -38,7 +38,7 @@ header > p{
     font-family: var(--fonte-paragrafo);
     font-size: 1em;
     margin: auto;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 nav{
