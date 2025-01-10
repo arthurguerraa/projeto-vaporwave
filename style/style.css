@@ -1,0 +1,181 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --cor0: #eba9f4;
+    --cor1: #7663F2;
+    --cor2: #0000FF;
+    --cor3: #C0C0C0;
+
+    --fonte-paragrafo: "Roboto Mono", serif;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > h1{
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    font-size: 3em;
+    font-family: var(--fonte-paragrafo);
+}
+
+header > p{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+nav{
+    text-align: left;
+    margin-left: 20px;
+}
+
+nav a{
+    padding-right: 20px;
+    color: white;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: var(--cor2);
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: white;
+    background-color: var(--cor3);
+    box-shadow: inset 1px 1px 5px #fff, inset -1px -1px 5px black;
+}
+
+main > .azul{
+    background-color: var(--cor2);
+    color: var(--cor2);
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    position: relative;
+    min-height: 20px; /* Adicione uma altura mínima para evitar o colapso */
+    
+  }
+
+main > .azul > img{
+    height: 10px;
+    position: absolute; /* Posiciona a imagem em relação à div azul */
+    top: 5px; /* Ajuste a posição vertical conforme necessário */
+    right: 5px; /* Mantém a imagem no canto direito */
+    cursor: pointer;
+}
+
+article > h1{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+
+article h2{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+}
+
+article p{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.imagem-1{
+   
+    display: block; /* transformando a tag img que é inline level por natureza em box level para que ela ocupe toda a linha que ela está */
+    margin: auto;
+    padding-top: 20px;
+}
+
+.playlist{
+    display: block;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.video{
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%; /* distância do vídeo pra borda de cima da div*/
+    left: 5%; /* distância do vídeo pra borda da esquerda da div*/
+    width: 90%; /* largura do vídeo dentro da div*/
+    height: 90%; /* altura do vídeo dentro da div*/
+}
+
+aside{
+    padding-bottom: 20px;
+}
+
+aside > h3{
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1.2em;
+}
+
+aside > ul{
+    list-style-position: inside;
+    font-family: var(--fonte-paragrafo);
+    font-size: 1em;
+    columns: 2;
+    margin-left: 20px;
+    
+}
+
+footer{
+    background-color: #0000FF;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+}
