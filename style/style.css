@@ -70,7 +70,10 @@ main{
     margin-top: 100px;
     background-color: white;
     background-color: var(--cor3);
-    box-shadow: inset 1px 1px 5px #fff, inset -1px -1px 5px black;
+    box-shadow: 
+    inset 2px 2px 0px #fff, /* Borda clara interna */
+    inset -2px -2px 0px #000, /* Borda escura interna */
+    2px 2px 0px #000; /* Sombra preta externa */
 }
 
 main > .azul{
